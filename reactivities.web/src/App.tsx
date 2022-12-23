@@ -10,7 +10,7 @@ function App() {
 
 
     useEffect(() => {
-        axios.get('https://localhost:7282/Reactivities/Api/Activities/GetActivities')
+        axios.get('https://localhost:7282/Reactivities/Api/Activities/List')
             .then((res) => {
                 setActivities(res.data)
             })
