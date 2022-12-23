@@ -1,4 +1,5 @@
-﻿using Reactivities.Domain;
+﻿using Microsoft.EntityFrameworkCore;
+using Reactivities.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,26 +27,26 @@ namespace Reactivities.Persistence
                    },
                    new Activity() {
                     Id= Guid.NewGuid(),
-                    Title="Play Football",
+                    Title="Play Basketball",
                     Date= DateTime.Now,
-                    Description="Have fun playing football",
+                    Description="Have fun playing Basketball",
                     Category = "Sport",
                     City = "Lisbon",
                     Venue="Cidadela"
                    },
                    new Activity() {
                        Id = Guid.NewGuid(), 
-                       Title = "Play Football", 
+                       Title = "Play Tennis", 
                        Date = DateTime.UtcNow.AddDays(10), 
-                       Description = "Have fun playing football", 
+                       Description = "Have fun playing Tennis", 
                        Category = "Sport", 
                        City = "Lisbon",
                        Venue = "Estádio da Luz"}, 
                    new Activity() {
                        Id = Guid.NewGuid(), 
-                       Title = "Play Football", 
+                       Title = "Play Golf", 
                        Date = DateTime.UtcNow.AddMonths(13), 
-                       Description = "Have fun playing football", 
+                       Description = "Have fun playing golf", 
                        Category = "Sport", 
                        City = "Porto", 
                        Venue = "Estádio do Dragão"}
@@ -54,8 +55,15 @@ namespace Reactivities.Persistence
                 await context.AddRangeAsync(activities);
                 await context.SaveChangesAsync();
 
+            }
+            else
+            {
+                // Clear the previous activities from database
 
-
+                //var currentActivities = await context.Activities.ToListAsync();
+                //context.RemoveRange(currentActivities);
+                //await context.SaveChangesAsync();
+            
             }
         }
     }

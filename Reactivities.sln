@@ -3,18 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Api", "Reactivities.Api\Reactivities.Api.csproj", "{835D00F6-6C12-4563-85F8-6699179A3D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reactivities.Api", "Reactivities.Api\Reactivities.Api.csproj", "{835D00F6-6C12-4563-85F8-6699179A3D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Persistence", "Reactivities.Persistence\Reactivities.Persistence.csproj", "{65E38A29-D25F-4777-B676-BDDEF2C60185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reactivities.Persistence", "Reactivities.Persistence\Reactivities.Persistence.csproj", "{65E38A29-D25F-4777-B676-BDDEF2C60185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Application", "Reactivities.Application\Reactivities.Application.csproj", "{8025A64C-13CE-467A-938C-273F093ECD08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reactivities.Application", "Reactivities.Application\Reactivities.Application.csproj", "{8025A64C-13CE-467A-938C-273F093ECD08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Domain", "Reactivities.Domain\Reactivities.Domain.csproj", "{B95E0CD3-4066-4745-B0E0-2ED98597274D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reactivities.Domain", "Reactivities.Domain\Reactivities.Domain.csproj", "{B95E0CD3-4066-4745-B0E0-2ED98597274D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4110438-58D5-4281-A0A4-F7A1774C6190}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Reactivities.Web", "Reactivities.Web\Reactivities.Web.esproj", "{6516A176-084C-408D-AB9B-6E6555D64903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,12 @@ Global
 		{B95E0CD3-4066-4745-B0E0-2ED98597274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B95E0CD3-4066-4745-B0E0-2ED98597274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B95E0CD3-4066-4745-B0E0-2ED98597274D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6516A176-084C-408D-AB9B-6E6555D64903}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
