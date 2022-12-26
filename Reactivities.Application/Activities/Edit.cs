@@ -26,7 +26,7 @@ namespace Reactivities.Application.Activities
             {
                 var activity = await _context.Activities.FindAsync(request.Activity.Id);
 
-                if (activity == null)
+                if (activity != null)
                 {
                     // Map source(request.Activity) to destination(activity)
                     _mapper.Map(request.Activity, activity);    

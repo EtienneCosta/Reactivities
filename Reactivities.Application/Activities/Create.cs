@@ -23,7 +23,6 @@ namespace Reactivities.Application.Activities
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
 
-                request.Activity.Id = Guid.NewGuid();
                 request.Activity.Date = DateTime.UtcNow;
 
                  await _context.Activities.AddAsync(request.Activity);
